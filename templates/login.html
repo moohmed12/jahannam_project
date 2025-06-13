@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>🔥 دخول جهنمي 🔥</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="title">🚨 دخول منطقة محظورة 🚨</h1>
+        <form method="POST" action="/">
+            <input type="text" name="username" placeholder="👤 اسم المستخدم" required>
+            <input type="password" name="password" placeholder="🔐 كلمة المرور" required>
+            <button type="submit">💀 ادخل الآن 💀</button>
+        </form>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

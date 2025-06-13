@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>📸 صور ومقالات عن النادي الأهلي</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .gallery img { width: 300px; height: auto; border: 3px solid gold; border-radius: 10px; box-shadow: 0 0 10px crimson; }
+        .article { background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 15px; margin-top: 25px; }
+        .article h3 { color: gold; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>🏆 صور ومقالات عن النادي الأهلي</h1>
+
+        <div class="gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/AlAhly_SC.png/600px-AlAhly_SC.png" alt="شعار الأهلي">
+            <img src="https://cdn.al-ain.com/images/2023/5/5/236-204211-club-world-cup-alahly_700x400.jpg" alt="الأهلي في كأس العالم">
+            <img src="https://mediaaws.almasryalyoum.com/news/large/2023/05/19/2158929_0.jpeg" alt="احتفالات الأهلي">
+        </div>
+
+        <div class="article">
+            <h3>🏅 أسطورة أفريقيا</h3>
+            <p>يُعد النادي الأهلي المصري أكثر الأندية الأفريقية تحقيقًا للبطولات القارية، حيث فاز بدوري أبطال أفريقيا أكثر من 10 مرات.</p>
+        </div>
+
+        <div class="article">
+            <h3>👥 جمهور لا يُقهر</h3>
+            <p>يمتلك الأهلي قاعدة جماهيرية ضخمة تُعد من الأكبر في الوطن العربي، وهو ما يجعله قوة جماهيرية حقيقية في أي ملعب.</p>
+        </div>
+
+        <div class="article">
+            <h3>📅 تأسيس الأهلي</h3>
+            <p>تأسس النادي الأهلي في عام 1907، وكان أول نادٍ للمصريين في فترة الاحتلال الإنجليزي، وله دور وطني وتاريخ مشرف.</p>
+        </div>
+
+        <a href="/ahly" style="display:inline-block;margin-top:20px;color:crimson;">🔙 العودة للصفحة السابقة</a>
+    </div>
+</body>
+</html>
